@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Display and Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src=""></script>
+    <style>
+        [logo-icon]:hover {
+            background: #293d3d;
+            color: white;
+            border: #293d3d;
+        }
+
+        [logo-icon] {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* border: 8px solid rgb(243, 238, 238); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            transition: all .5s ease;
+        }
+
+        body {
+            position: absolute;
+            background-color: rgb(238, 16, 227);
+            width: 2000px;
+            height: 2000px;
+            border: 0;
+        }
+
+        .skyblue {
+            position: absolute;
+            width: 1500px;
+            height: 500px;
+            background-color: aqua;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        .blueball {
+            position: sticky;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: rgb(28, 24, 236);
+            top: 0px;
+            left: 10px;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        .purpleball {
+            position: sticky;
+            margin-top: 200px;
+            margin-left: 20px;
+            background-color: rgb(122, 37, 207);
+            top: 100px;
+            left: 100px;
+            box-shadow: 5px 10px #e0d8d8;
+
+        }
+
+
+        .yellowball {
+            position: sticky;
+            margin-top: 600px;
+            margin-left: 20px;
+            background-color: rgb(209, 176, 26);
+            top: 100px;
+            left: 100px;
+            transition-delay: 5s;
+            transition: all .5s ease;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        .roseball {
+            position: sticky;
+            margin-top: 300px;
+            margin-left: 20px;
+            background-color: rgb(233, 53, 203);
+            top: 100px;
+            left: 120px;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        article {
+            position: absolute;
+            width: 2500px;
+            height: 120px;
+            background-color: rgb(250, 149, 245);
+            box-shadow: 5px 10px #e0d8d8;
+            top: 150px;
+        }
+
+        .greenball {
+            position: sticky;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: rgb(45, 122, 25);
+            top: 10px;
+            left: 900px;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        .blue {
+            position: absolute;
+            width: 1000px;
+            height: 1000px;
+            background-color: blue;
+            top: 100px;
+            left: 300px;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+
+
+        .green {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background-color: rgb(30, 206, 30);
+            display: inline-block;
+            top: 220px;
+            left: 50px;
+            box-shadow: 5px 10px #e0d8d8;
+        }
+
+        .purple {
+            position: absolute;
+            width: 200px;
+            height: 1500px;
+            left: 600px;
+            top: 0px;
+            background-color: blueviolet;
+            display: inline-block;
+            box-shadow: 5px 10px #e0d8d8;
+
+        }
+
+
+
+        h2 {
+            position: absolute;
+            bottom: 60px;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 1px 1px #f0e8e8;
+        }
+
+        h1 {
+            position: absolute;
+            top: 60px;
+            padding: 20px;
+            right: 10px;
+            text-align: center;
+            text-shadow: 1px 1px #f0e8e8;
+        }
+
+        h3 {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            text-shadow: 1px 1px #f0e8e8;
+        }
+
+        p {
+            position: absolute;
+            font-size: 40px;
+            color: black;
+            top: 5px;
+            right: 50px;
+            text-shadow: 1px 1px #f0e8e8;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="skyblue">
+        <div logo-icon class="blueball"></div>
+        <h3>Made by Bea Blome</h3>
+    </header>
+    <div class="green">
+        <div logo-icon class="roseball"></div>
+        <h1>Life is Love and Care</h1>
+    </div>
+
+    <div class="blue">
+        <div logo-icon class="purpleball"> </div>
+    </div>
+    <article>
+        <div logo-icon class="greenball"> </div>
+        <p>Life is for enjoy not competition</p>
+    </article>
+    <aside class="purple">
+        <div logo-icon class="yellowball"></div>
+        <h2>Life is not a competition<br>
+            Life is Fun</h2>
+    </aside>
+    <footer>
+
+    </footer>
+    <!-- <footer class="skyblue"></footer> -->
+
+
+</body>
+
+</html>
